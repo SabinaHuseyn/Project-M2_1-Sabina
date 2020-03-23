@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposit Calculator</title>
+    <link rel="stylesheet" href="../CSS/reset.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Archivo&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <img src="../images/PashaBank.png" alt="Pasha Bank" />
+    </header>
+    <main>
+      <section>
+        <h1>Deposit Calculator</h1>
+        <div class="data">
+          <p>Amount of Deposit ($)</p>
+          <input type="number" id="deposit" size="30" required />
+        </div>
+        <div class="data">
+          <p>Amount of Replenishment ($)</p>
+          <input type="number" id="monthlyAdd" size="30" required />
+        </div>
+        <div class="data">
+          <p>Frequency of Replenishment</p>
+          <select id="selectTerm">
+            <option id="month">Monthly</option>
+            <option id="quarter">Quarterly</option>
+            <option id="year">Yearly</option>
+          </select>
+        </div>
+        <div class="data">
+          <p>Annual Interest Rate (%)</p>
+          <input type="number" id="interest" size="30" required />
+        </div>
+        <div class="data">
+          <p>Deposit Term (days)</p>
+          <input type="number" id="term" size="30" required />
+        </div>
+        <div class="my-btn">
+          <button id="buttonCalculate">Calculate</button>
+        </div>
+        <div id="error"></div>
+      </section>
+    </main>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
